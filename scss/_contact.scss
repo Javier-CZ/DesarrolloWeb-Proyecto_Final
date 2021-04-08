@@ -1,0 +1,20 @@
+.contact-form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form{
+    &-col-1{
+        width: 49%;
+    }
+
+    &-col-2{
+        width: 98%;
+    }
+
+    &-message{
+        width: 98%;
+        resize: none;
+        overflow-y: scroll;
+    }
+}

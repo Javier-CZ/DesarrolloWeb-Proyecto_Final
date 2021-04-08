@@ -1,0 +1,77 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+.grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    min-height: 100vh;
+    padding: 3vw 6vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
+    grid-template-areas:
+    "design   design"
+    "web-development   web-development"
+    "branding   branding"
+    "digital   digital";
+
+    .item {
+      position: relative;
+      padding: 1vw;
+      background-size: 150% 100%;
+      font-size: 25px;
+      color: black;
+    }
+
+    .item:nth-child(1)  { 
+      grid-area: design; 
+      background-image: linear-gradient(60deg, #ffc8fb 0%, salmon 80%); 
+    }
+
+    .item:nth-child(2)  { 
+      grid-area: web-development; 
+      background-image: linear-gradient(60deg, salmon 0%, #FFB579 80%); 
+    }
+
+    .item:nth-child(3)  { 
+      grid-area: branding; 
+      background-image: linear-gradient(60deg, #FFB579 0%, #A8E0FF 80%); 
+    }
+    
+    .item:nth-child(4)  { 
+      grid-area: digital; 
+      background-image: linear-gradient(60deg, #A8E0FF 0%, #595758 80%); 
+    }
+    
+    .item:hover{
+      background-position: top right;
+      transform: scale(0.98);
+      font-size: 30px;
+      color: white;
+      transition: all 1s;
+    }
+}
+  
+@media screen and (min-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "design   design   design   branding   branding"
+        "design   design   design   digital   digital"
+        "web-development   web-development   web-development   web-development   web-development";
+    }
+}
+  
+@media screen and (min-width: 1400px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "design design design   web-development web-development   branding   branding"
+        "design design design   web-development web-development   digital   digital";
+    }
+}
