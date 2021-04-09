@@ -16,16 +16,18 @@ table{
         padding: 10px;
     }
 
-    .career-period-role{
-        width: 15%;
-    }
-    
-    .career-description{
-        width: 65%;
-    }
-    
-    .career-more-info{
-        width: 5%;
-        border-bottom: 0px;
+    .career{
+        &-period-role{
+            width: 15%;
+        }
+
+        &-description{
+            width: 65%;
+        }
+
+        &-more-info{
+            width: 5%;
+            border-bottom: 0px;
+        }
     }
 }
