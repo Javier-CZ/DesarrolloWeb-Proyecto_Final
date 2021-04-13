@@ -9,15 +9,21 @@
     background-color: salmon;
 
     .nav-menu{
-        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         z-index: 10;
-    }
-
-    li{
-        margin-bottom: 10px;
     }
     
     .menu-icon{
         width: 30px;
+
+        &-top{
+            margin: 10px 0;
+        }
+
+        &-bottom{
+            margin-bottom: 15px;
+        }
     }
 }

@@ -1,17 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    text-transform: none;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-}
-
-html{
-    font-size: 10px;
-}
-
 //Color variables
 $primary-color : salmon;
 //$secondary-color: ;
@@ -22,7 +8,8 @@ $dark-color: #333;
 //FONT SETTINGS
 //Font variables
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-$f-family-primary: 'Source Sans Pro', sans-serif;
+$f-family-primary: 'Ubuntu', 'sans-serif';
+$f-family-secondary: 'Source Sans Pro', sans-serif;
 
 
 //Font mixins

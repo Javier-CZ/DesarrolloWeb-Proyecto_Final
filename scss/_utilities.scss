@@ -4,10 +4,21 @@
     width: 100%;
 }
 
-.main-container{
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 95%;
     height: 100vh;
+
+    &-career{
+        @extend .main-div;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+        padding: 8rem;
+    }
 }
 
 .center-content{

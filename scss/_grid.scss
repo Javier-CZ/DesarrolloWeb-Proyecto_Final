@@ -8,6 +8,7 @@
 .grid {
     display: grid;
     grid-gap: 1.5vw;
+    width: 100%;
     min-height: 100vh;
     padding: 3vw 6vw;
     grid-template-columns: repeat(2, 1fr);
