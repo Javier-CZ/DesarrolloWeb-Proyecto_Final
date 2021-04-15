@@ -22,9 +22,14 @@ h1{
     text-shadow: black;
 }
 
+.line{
+    padding:2px 4rem;
+    background: $primary-color;
+}
+
 .card{
     min-width: 25rem;
-    margin: 0 4rem;
+    //margin: 0 4rem;
     border-radius: 1rem;
 
     &-img-top{
@@ -52,6 +57,11 @@ h1{
             font-size: 1.5rem;
         }
     }
+}
+
+.last-card{
+    padding-right: 20rem;
+    color: white;
 }
 
 .modal{

@@ -17,8 +17,27 @@
         flex-wrap: nowrap;
         justify-content: start;
         overflow-x: scroll;
-        padding: 8rem;
+        padding: 5rem 19rem 0;
     }
+}
+
+.career-fade{
+    position: fixed;
+    width: 14rem;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 1.5rem 1.5rem white;
+    z-index: 5;    
+}
+
+.fade-left{
+    position: fixed;
+    left: 5%;
+    box-shadow: 2rem 0 1.5rem 1.5rem white;
+}
+
+.fade-right{
+    right: 0;
 }
 
 .center-content{
