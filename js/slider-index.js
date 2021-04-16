@@ -1,5 +1,4 @@
 function changeSlide() {
-    console.log('link OK');
 
     var imagenes=[
         {
