@@ -1,0 +1,10 @@
+@media screen and (min-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "design   design   design   branding   branding"
+        "design   design   design   digital   digital"
+        "web-development   web-development   web-development   web-development   web-development";
+    }
+}

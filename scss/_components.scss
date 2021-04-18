@@ -22,6 +22,7 @@ h1{
     text-shadow: black;
 }
 
+// CAREER COMPONENTS 
 .line{
     padding:2px 4rem;
     background: $primary-color;
@@ -29,7 +30,6 @@ h1{
 
 .card{
     min-width: 25rem;
-    //margin: 0 4rem;
     border-radius: 1rem;
 
     &-img-top{
@@ -136,6 +136,146 @@ h1{
     }
 }
 
+//SERVICES COMPONENTS
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+.grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10vh 10vw 8vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
+    grid-template-areas:
+    "design   design"
+    "web-development   web-development"
+    "branding   branding"
+    "digital   digital";
+
+    .item {
+      position: relative;
+      padding: 5rem;
+      background: $primary-color;
+      border-radius: 1rem;
+      border: 2px solid $primary-color;
+
+      h2{
+        @include font-set($f-family-primary, 2.5rem, 1.5, 600);
+        color: $light-color;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p{
+        display: none;
+        @include font-set($f-family-primary, 1.5rem, 1.5, 400);
+        color: $dark-color;
+      }
+
+      &:nth-child(1)  { 
+        grid-area: design;
+      }
+      &:nth-child(2)  { 
+        grid-area: web-development;
+      }
+      &:nth-child(3)  { 
+        grid-area: branding;
+      }
+      &:nth-child(4)  { 
+        grid-area: digital;
+      }
+    }
+    
+    .item:hover{
+        transform: scale(0.98);
+        transition: all 1s;
+      
+        background: white;
+        border: 2px solid $primary-color;
+
+        .box{
+            .service-btn{
+                display: block;
+                text-align: center;
+
+                h2{
+                    @include font-set($f-family-secondary, 2.5rem, 1.5, 700);
+                    color: $primary-color;
+                }
+
+                p{                    
+                    @include font-set($f-family-secondary, 2rem, 1.5, 300);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.services-pop-up{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    
+    background: rgba($color: #000000, $alpha: 0.7);
+
+    .pop-up{
+        width: 50%;
+        height: 50%;
+        background: white;
+        border-radius: 1rem;
+
+        &-head{
+            padding: 2rem 0;
+            background: $primary-color;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+
+            h2{    
+                @include font-set($f-family-primary, 2.5rem, 1, 700);
+                color: $light-color;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .close-box {
+                position: absolute;
+                top: 28%;
+                right: 27%;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .close-btn{
+                font-size: 2.2rem;
+                color: $light-color;
+            }
+        }
+
+        &-body{
+            padding: 3rem 4rem 2rem;
+            height: 100%;
+            
+            p{
+                @include font-set($f-family-secondary, 1.5rem, 1.5, 500)
+            }
+        }
+    }
+}
+
+// CONTACT COMPONENTS
 .contact-form {
     width: 40%;
     margin: 0 auto;
