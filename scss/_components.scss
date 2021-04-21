@@ -22,7 +22,7 @@ h1{
     text-shadow: black;
 }
 
-// CAREER COMPONENTS 
+/** CAREER COMPONENTS **/
 .line{
     padding:2px 4rem;
     background: $primary-color;
@@ -136,7 +136,7 @@ h1{
     }
 }
 
-//SERVICES COMPONENTS
+/** SERVICES COMPONENTS **/
 .box {
     display: flex;
     justify-content: center;
@@ -146,21 +146,19 @@ h1{
   
 .grid {
     display: grid;
-    grid-gap: 1.5vw;
+    grid-gap: 2vw;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding: 10vh 10vw 8vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
     grid-template-areas:
-    "design   design"
-    "web-development   web-development"
-    "branding   branding"
-    "digital   digital";
+    "design design design   web-development web-development   branding   branding"
+    "design design design   web-development web-development   digital   digital";
+    
 
     .item {
       position: relative;
-      padding: 5rem;
       background: $primary-color;
       border-radius: 1rem;
       border: 2px solid $primary-color;
@@ -275,7 +273,7 @@ h1{
     }
 }
 
-// CONTACT COMPONENTS
+/** CONTACT COMPONENTS **/
 .contact-form {
     width: 40%;
     margin: 0 auto;

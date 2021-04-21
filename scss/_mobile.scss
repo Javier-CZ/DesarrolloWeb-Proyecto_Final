@@ -1,9 +1,71 @@
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 480px) {
+    /** NAVBAR RULES **/
+    .navbar{
+        width: 50%;
+        padding: 2rem;
+        
+        .menu{
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                width: 80%;
+
+                &-top{
+                   @extend .menu-item;
+                   margin-top: 3rem;
+
+                   .menu-caption{
+                       margin-top: 1rem;
+                   }
+                }
+
+                &-bottom{
+                    @extend.menu-item;
+                    margin-bottom: unset;
+                }
+
+                a{
+                    font-weight: 600;
+                    font-size: 1.3rem;
+                    color: $light-color;
+                    text-transform: uppercase;
+                }
+            }
+
+            &-caption{
+                display: block;
+                position: relative;
+                margin-left: 1rem;
+                
+                left: unset;
+                top: unset;
+                background: unset;
+                border: unset;
+                margin-top: unset;
+            }
+
+            &-icon{
+                width: 4rem;
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    /** HEADER RULES **/
+    .logo-img{
+        width: 30px;
+    }
+
+    /** SERVICES RULES **/
     .grid {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: auto;
+        padding: 12vh 10vw 10vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 28vh 20vh repeat(2, 14vh);
         grid-template-areas:
-        "design design design   web-development web-development   branding   branding"
-        "design design design   web-development web-development   digital   digital";
+        "design   design"
+        "web-development   web-development"
+        "branding   branding"
+        "digital   digital";
     }
 }

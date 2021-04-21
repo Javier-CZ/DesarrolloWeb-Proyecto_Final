@@ -1,4 +1,4 @@
-.navBar{
+.navbar{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@
     width: 5%;
     padding: 10px;
     background-color: salmon;
+    z-index: 70;
 
     .nav-menu{
         display: flex;
@@ -14,33 +15,37 @@
         justify-content: center;
         z-index: 50;
     }
-    
-    .menu-icon{
-        width: 30px;
 
-        &-top{
-            margin: 10px 0;
+    .menu{
+        &-icon{
+            width: 30px;
+            margin: 1rem 0;
         }
 
-        &-bottom{
-            margin-bottom: 15px;
+        &-item{
+            &-top{
+                margin-top: 2rem 0;
+             }
+
+             &-bottom{
+                 margin-bottom: .5rem;
+             }
         }
-    }
 
-    .menu-caption{
-        display: none;
-        position: absolute;
-        left: 115%;
-        background: white;
-        border: 2px solid $primary-color;
-        border-radius: 5px;
-        margin-top: -38px;
-        padding: 5px 10px;
+        &-caption{         
+            display: none;
+            position: absolute;
+            left: 115%;
+            background: white;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            margin-top: -38px;
+            padding: 5px 10px;
 
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: $primary-color;
-        text-transform: uppercase;
-
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $primary-color;
+            text-transform: uppercase;            
+        }
     }
 }
