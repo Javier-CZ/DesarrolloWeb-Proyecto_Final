@@ -334,6 +334,12 @@ h1 {
         .description {
           font-size: 1.25rem;
           line-height: 1.3;
+
+          a {
+              font-weight: 600;
+            font-style: italic;
+            color: $primary-color;
+          }
         }
       }
     }
