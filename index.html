@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" href="./img/fav-icon.png">
 
-    <meta name="description" content="I'm Javier CZ, a graphic designer and full stack developer based in Argentina. I'll work with you from the first brand draft to your custom web app.">
-    <meta name="keywords" content="Graphic design, full stack, designer, front-end, back-end, brand, website, web app, Buenos Aires, Argentina, HTML, CSS, Sass, JavaScript, React, Node, Adobe">
+  <meta name="description"
+    content="I'm Javier CZ, a graphic designer and full stack developer based in Argentina. I'll work with you from the first brand draft to your custom web app.">
+  <meta name="keywords"
+    content="Graphic design, full stack, designer, front-end, back-end, brand, website, web app, Buenos Aires, Argentina, HTML, CSS, Sass, JavaScript, React, Node, Adobe">
 
-    <title>Javier CZ</title>
+  <title>Javier CZ</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
   <div class="full-screen-container">
 
@@ -24,62 +30,65 @@
     <nav class="navbar">
       <div class="nav-menu">
         <div class="menu-item-top">
-          <img src="./img/home.png" class="menu-icon" alt="Home" onmouseover="hoverOn('home')" onmouseout="hoverOff('home')">
+          <a href="./index.html"><img src="./img/home.png" class="menu-icon" alt="Home" onmouseover="hoverOn('home')"
+              onmouseout="hoverOff('home')"></a>
           <div id="caption-home" class="menu-caption"><a href="./index.html">Home</a></div>
         </div>
         <div class="menu-item">
-          <a href="./career.html"><img src="./img/trayectoria.png" class="menu-icon" alt="Career" onmouseover="hoverOn('career')" onmouseout="hoverOff('career')"></a>
+          <a href="./career.html"><img src="./img/trayectoria.png" class="menu-icon" alt="Career"
+              onmouseover="hoverOn('career')" onmouseout="hoverOff('career')"></a>
           <div id="caption-career" class="menu-caption"><a href="./career.html">Career</a></div>
         </div>
         <div class="menu-item">
-          <a href="./services.html"><img src="./img/servicios.png" class="menu-icon" alt="Services" onmouseover="hoverOn('services')" onmouseout="hoverOff('services')"></a>
+          <a href="./services.html"><img src="./img/servicios.png" class="menu-icon" alt="Services"
+              onmouseover="hoverOn('services')" onmouseout="hoverOff('services')"></a>
           <div id="caption-services" class="menu-caption"><a href="./services.html">Services</a></div>
         </div>
         <div class="menu-item">
-          <a href="./portfolio.html"><img src="./img/portfolio.png" class="menu-icon" alt="Portfolio" onmouseover="hoverOn('portfolio')" onmouseout="hoverOff('portfolio')"></a>
+          <a href="./portfolio.html"><img src="./img/portfolio.png" class="menu-icon" alt="Portfolio"
+              onmouseover="hoverOn('portfolio')" onmouseout="hoverOff('portfolio')"></a>
           <div id="caption-portfolio" class="menu-caption"><a href="./portfolio.html">Portfolio</a></div>
         </div>
       </div>
       <div class="nav-menu">
         <div class="menu-item-bottom">
-          <a href="./contact.html"><img src="./img/contacto.png" class="menu-icon" alt="Contact" onmouseover="hoverOn('contact')" onmouseout="hoverOff('contact')"></a>
+          <a href="./contact.html"><img src="./img/contacto.png" class="menu-icon" alt="Contact"
+              onmouseover="hoverOn('contact')" onmouseout="hoverOff('contact')"></a>
           <div id="caption-contact" class="menu-caption"><a href="./contact.html">Contact</a></div>
         </div>
       </div>
     </nav>
-        <main class="main-div">
+    <main class="main-div">
 
-            <!-- The logo is set to be on the top right corner of the screen and the h1 is used to improve SEO -->
+      <!-- The logo is set to be on the top right corner of the screen and the h1 is used to improve SEO -->
+      <header class="logo">
+        <img src="./img/javiercz-logo-white.png" class="logo-img" alt="JavierCZ">
+        <h1>JavierCZ - Javier Castaños Zemborain - Diseño gráfico, desarrollo full stack y marketing digital</h1>
+      </header>
 
-            <header class="logo">
-                <img src="./img/javiercz-logo-white.png" class="logo-img" alt="JavierCZ">
-                <h1>JavierCZ - Javier Castaños Zemborain - Diseño gráfico, desarrollo full stack y marketing digital</h1>
-            </header>
+      <!-- Main slider with best cases, key proyects, services, etc. -->
+      <div class="full-screen-slider">
+        <img class="full-screen-slider-image" name="sliderIndexImg" alt="Imagen de muestra">
+      </div>
 
-            <!-- Main slider with best cases, key proyects, services, etc. -->
+      <!-- Slide title, description and link -->
+      <div class="slider-description">
+        <p id="sliderDescriptionTitle"></p>
+        <p id="sliderDescriptionText"></p>
+      </div>
+      <footer class="copyright">
+        <p>All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
 
-            <div class="full-screen-slider">
-                <img class="full-screen-slider-image" name="sliderIndexImg" alt="Imagen de muestra">
-            </div>
 
-            <!-- Slide title, description and link -->
+  <script src="./js/slider-index.min.js" type="text/javascript"></script>
 
-            <div class="slider-description">
-                <p id="sliderDescriptionTitle"></p>
-                <p id="sliderDescriptionText"></p>
-            </div>
-            <footer class="copyright">
-                <p>All rights reserved.</p>
-            </footer>
-        </main>
-    </div>
+  <script src="./js/functions.js" type="text/javascript"></script>
+  <script>
+    window.addEventListener('load', changeSlide())
+  </script>
 
-    
-    <script src="./js/slider-index.min.js" type="text/javascript"></script>
-    
-    <script src="./js/functions.js" type="text/javascript"></script>
-    <script>
-      window.addEventListener('load', changeSlide())
-    </script>
-  </body>
+</body>
 </html>

@@ -1,71 +1,72 @@
 @media screen and (max-width: 480px) {
-    /** NAVBAR RULES **/
-    .navbar{
-        width: 50%;
-        padding: 2rem;
-        
-        .menu{
-            &-item {
-                display: flex;
-                align-items: center;
-                justify-content: start;
-                width: 80%;
+  /** NAVBAR RULES **/
+  .navbar {
+    width: 50%;
+    padding: 2rem;
 
-                &-top{
-                   @extend .menu-item;
-                   margin-top: 3rem;
+    .menu {
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 80%;
 
-                   .menu-caption{
-                       margin-top: 1rem;
-                   }
-                }
+        &-top {
+          @extend .menu-item;
+          margin-top: 3rem;
 
-                &-bottom{
-                    @extend.menu-item;
-                    margin-bottom: unset;
-                }
-
-                a{
-                    font-weight: 600;
-                    font-size: 1.3rem;
-                    color: $light-color;
-                    text-transform: uppercase;
-                }
-            }
-
-            &-caption{
-                display: block;
-                position: relative;
-                margin-left: 1rem;
-                
-                left: unset;
-                top: unset;
-                background: unset;
-                border: unset;
-                margin-top: unset;
-            }
-
-            &-icon{
-                width: 4rem;
-                margin: 2rem 0;
-            }
+          .menu-caption {
+            margin-top: 1rem;
+          }
         }
-    }
 
-    /** HEADER RULES **/
-    .logo-img{
-        width: 30px;
-    }
+        &-bottom {
+          @extend.menu-item;
+          margin-bottom: unset;
+        }
 
-    /** SERVICES RULES **/
-    .grid {
-        padding: 12vh 10vw 10vh;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 28vh 20vh repeat(2, 14vh);
-        grid-template-areas:
-        "design   design"
-        "web-development   web-development"
-        "branding   branding"
-        "digital   digital";
+        a {
+          font-weight: 600;
+          font-size: 1.3rem;
+          color: $light-color;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+
+      &-caption {
+        display: block;
+        position: relative;
+        margin-left: 1rem;
+
+        left: unset;
+        top: unset;
+        background: unset;
+        border: unset;
+        margin-top: unset;
+      }
+
+      &-icon {
+        width: 4rem;
+        margin: 2rem 0;
+      }
     }
+  }
+
+  /** HEADER RULES **/
+  .logo-img {
+    width: 30px;
+  }
+
+  /** SERVICES RULES **/
+  .grid {
+    padding: 12vh 10vw 10vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 28vh 20vh repeat(2, 14vh);
+    grid-template-areas:
+      'design   design'
+      'web-development   web-development'
+      'branding   branding'
+      'digital   digital';
+  }
 }

@@ -1,5 +1,5 @@
 //Color variables
-$primary-color : salmon;
+$primary-color: salmon;
 //$secondary-color: ;
 
 $light-color: bisque;
@@ -7,34 +7,33 @@ $dark-color: #333;
 
 //FONT SETTINGS
 //Font variables
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 $f-family-primary: 'Ubuntu', 'sans-serif';
 $f-family-secondary: 'Source Sans Pro', sans-serif;
 
-
 //Font mixins
-@mixin font-set($family, $size, $height, $weight){
-    font-family: $family;
-    font-size: $size;
-    line-height: $height;
-    font-weight: $weight;    
+@mixin font-set($family, $size, $height, $weight) {
+  font-family: $family;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
 }
 
 //Set text color based on bg
-@function font-color($color){
-    @if(lightness($color) > 60){
-        @return $dark-color;
-    }@else{
-        @return $light-color;
-    }
+@function font-color($color) {
+  @if (lightness($color) > 60) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
 }
 
-@mixin font-custom-color($custom-font-color){
-    color: $custom-font-color;
+@mixin font-custom-color($custom-font-color) {
+  color: $custom-font-color;
 }
 
 //Set background and text color
 @mixin set-background($color) {
-    background-color: $color;
-    color: font-color($color);
+  background-color: $color;
+  color: font-color($color);
 }

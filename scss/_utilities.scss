@@ -1,124 +1,151 @@
-.full-screen-container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+.full-screen-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.main-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 95%;
-    height: 100vh;
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 95%;
+  height: 100vh;
 
-    &-career{
-        @extend .main-div;
-        flex-wrap: nowrap;
-        justify-content: start;
-        overflow-x: scroll;
-        padding: 5rem 19rem 0;
+  &-career {
+    @extend .main-div;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow-x: scroll;
+    padding: 5rem 19rem 0;
+
+    &::-webkit-scrollbar {
+      height: 14px;
+      background: rgb(233, 233, 233);
     }
+    &::-webkit-scrollbar-thumb {
+      background: $primary-color;
+      border: 3px solid rgb(233, 233, 233);
+      border-radius: 10px;
+      height: 10px;
+    }
+
+    .title {
+      position: fixed;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.services {
+    flex-wrap: wrap;
+    height: 90vh;
+    padding: 5% 15%;
+
+    .title {
+      display: flex;
+      margin-bottom: 4rem;
+
+      h2 {
+        font-size: 5rem;
+        line-height: 1;
+        letter-spacing: 0.2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
-.career-fade{
-    position: fixed;    
-    top: 0;
-    width: 14rem;
-    height: 100%;
-    background: white;
-    box-shadow: 0 0 1.5rem 1.5rem white;
-    z-index: 5;    
+.career-fade {
+  position: fixed;
+  top: 0;
+  width: 14rem;
+  height: 95%;
+  background: white;
+  box-shadow: 0 0 1.5rem 1.5rem white;
+  z-index: 5;
 }
 
-.fade-left{
-    left: 5%;
-    box-shadow: 2rem 0 1.5rem 1.5rem white;
+.fade-left {
+  left: 5%;
+  box-shadow: 2rem 0 1.5rem 1.5rem white;
 }
 
-.fade-right{
-    right: 0;
+.fade-right {
+  right: 0;
 }
 
-.center-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 //Margin and padding classes
-$spaceamounts: (1,2,3,4,5);
-
-@each $space in $spaceamounts {
-    .m-#{$space}{
-        margin: #{$space}rem,
-    }
-    .my-#{$space}{
-        margin: #{$space}rem 0,
-    }
-
-    .p-#{$space}{
-        padding: #{$space}rem,
-    }
-    .py-#{$space}{
-        padding: #{$space}rem 0,
-    }
+@for $i from 1 through 5 {
+  .m-#{$i} {
+    margin: #{$i}rem;
+  }
+  .my-#{$i} {
+    margin: #{$i}rem 0;
+  }
+  .mx-#{$i} {
+    margin: 0 #{$i}rem;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}rem;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}rem;
+  }
+  .p-#{$i} {
+    padding: #{$i}rem;
+  }
+  .py-#{$i} {
+    padding: #{$i}rem 0;
+  }
+  .px-#{$i} {
+    padding: 0 #{$i}rem;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i}rem;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}rem;
+  }
 }
 
-@for $i from 1 through 5{
-  
-    .m-#{$i}{
-        margin: #{$i}rem,
-    }
-    .my-#{$i}{
-        margin: #{$i}rem 0,
-    }
-    .mx-#{$i}{
-        margin: 0 #{$i}rem,
-    }
-    .mt-#{$i}{
-        margin-top: #{$i}rem,
-    }
-    .mb-#{$i}{
-        margin-bottom: #{$i}rem,
-    }
-    .ml-#{$i}{
-        margin-left: #{$i}rem,
-    }
-    .mr-#{$i}{
-        margin-right: #{$i}rem,
-    }
-    .p-#{$i}{
-        padding: #{$i}rem,
-    }
-    .py-#{$i}{
-        padding: #{$i}rem 0,
-    }
-    .px-#{$i}{
-        padding: 0 #{$i}rem,
-    }
-    .pt-#{$i}{
-        padding-top: #{$i}rem,
-    }
-    .pb-#{$i}{
-        padding-bottom: #{$i}rem,
-    }
-    .pl-#{$i}{
-        padding-left: #{$i}rem,
-    }
-    .pr-#{$i}{
-        padding-right: #{$i}rem,
-    }
+.mx-auto {
+  margin: 0 auto;
 }
-
-.mx-auto{
-    margin: 0 auto;
-}
-
 
 //Columns grid
-@for $i from 1 through 10{
-    .col-1of#{$i}{
-        width: (100%/#{$i});
-    }
+@for $i from 1 through 10 {
+  .col-1of#{$i} {
+    width: (100% /#{$i});
+  }
 }

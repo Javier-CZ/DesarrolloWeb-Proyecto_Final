@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="./img/fav-icon.png">
+  <link rel="icon" type="image/png" href="./img/fav-icon.png">
 
-    <meta name="description" content="I know that leads are important, both to you and to me. So please, fill the form and let me know how can I help you starting, developing or improving your business.">
-    <meta name="keywords" content="Graphic design, full stack, designer, front-end, back-end, brand, website, web app, Buenos Aires, Argentina, HTML, CSS, Sass, JavaScript, React, Node, Adobe">
+  <meta name="description"
+    content="I know that leads are important, both to you and to me. So please, fill the form and let me know how can I help you starting, developing or improving your business.">
+  <meta name="keywords"
+    content="Graphic design, full stack, designer, front-end, back-end, brand, website, web app, Buenos Aires, Argentina, HTML, CSS, Sass, JavaScript, React, Node, Adobe">
 
-    <title>Javier CZ - Contact</title>
+  <title>Javier CZ - Contact</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
   <div class="full-screen-container">
 
@@ -24,63 +30,91 @@
     <nav class="navbar">
       <div class="nav-menu">
         <div class="menu-item-top">
-          <img src="./img/home.png" class="menu-icon" alt="Home" onmouseover="hoverOn('home')" onmouseout="hoverOff('home')">
+          <a href="./index.html"><img src="./img/home.png" class="menu-icon" alt="Home" onmouseover="hoverOn('home')"
+              onmouseout="hoverOff('home')"></a>
           <div id="caption-home" class="menu-caption"><a href="./index.html">Home</a></div>
         </div>
         <div class="menu-item">
-          <a href="./career.html"><img src="./img/trayectoria.png" class="menu-icon" alt="Career" onmouseover="hoverOn('career')" onmouseout="hoverOff('career')"></a>
+          <a href="./career.html"><img src="./img/trayectoria.png" class="menu-icon" alt="Career"
+              onmouseover="hoverOn('career')" onmouseout="hoverOff('career')"></a>
           <div id="caption-career" class="menu-caption"><a href="./career.html">Career</a></div>
         </div>
         <div class="menu-item">
-          <a href="./services.html"><img src="./img/servicios.png" class="menu-icon" alt="Services" onmouseover="hoverOn('services')" onmouseout="hoverOff('services')"></a>
+          <a href="./services.html"><img src="./img/servicios.png" class="menu-icon" alt="Services"
+              onmouseover="hoverOn('services')" onmouseout="hoverOff('services')"></a>
           <div id="caption-services" class="menu-caption"><a href="./services.html">Services</a></div>
         </div>
         <div class="menu-item">
-          <a href="./portfolio.html"><img src="./img/portfolio.png" class="menu-icon" alt="Portfolio" onmouseover="hoverOn('portfolio')" onmouseout="hoverOff('portfolio')"></a>
+          <a href="./portfolio.html"><img src="./img/portfolio.png" class="menu-icon" alt="Portfolio"
+              onmouseover="hoverOn('portfolio')" onmouseout="hoverOff('portfolio')"></a>
           <div id="caption-portfolio" class="menu-caption"><a href="./portfolio.html">Portfolio</a></div>
         </div>
       </div>
       <div class="nav-menu">
         <div class="menu-item-bottom">
-          <a href="./contact.html"><img src="./img/contacto.png" class="menu-icon" alt="Contact" onmouseover="hoverOn('contact')" onmouseout="hoverOff('contact')"></a>
+          <a href="./contact.html"><img src="./img/contacto.png" class="menu-icon" alt="Contact"
+              onmouseover="hoverOn('contact')" onmouseout="hoverOff('contact')"></a>
           <div id="caption-contact" class="menu-caption"><a href="./contact.html">Contact</a></div>
         </div>
       </div>
     </nav>
-        <!-- The logo is set to be on the top right corner of the screen and the h1 is used to improve SEO -->
-        <header class="logo">
-            <img src="./img/javiercz-logo-color.png" class="logo-img" alt="JavierCZ">
-            <h1>JavierCZ - Javier Castaños Zemborain - Diseño gráfico, desarrollo full stack y marketing digital</h1>
-        </header>
-        <main class="main-div center-content">
-            <div class="contact-form">
-                <form action="#" method="post" autocomplete="on">
-                    <input type="text" class="form-col-1" name="form-first_name" placeholder="Nombre" required>
-                    <input type="text" class="form-col-1" name="form-last_name" placeholder="Apellido" required>
-                    <input type="text" class="form-col-1" name="form-mail" placeholder="E-mail" required>
-                    <input type="text" class="form-col-1" name="form-phone" placeholder="Teléfono">
-                    <select class="form-col-2" name="form-category" required>
-                        <option value="categoria" selected disabled>Seleccionar una categoria</option>
-                        <option value="empresa">Empresa</option>
-                        <option value="emprendedor">Emprendedor/a</option>
-                        <option value="freelancer">Freelancer</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <textarea class="form-message" name="form-message" rows="10" placeholder="Contame... qué te parecieron mis trabajos? Qué puedo hacer por vos?" required></textarea>
-                    <div class="form-col-2">
-                        <input type="checkbox" name="form-suscribe" value="yes">
-                        <label for="form-suscribe">Recibir novedades sobre tendencias, actualizaciones, servicios y trabajos.</label>
-                    </div>
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Enviar">
-                </form>
+
+    <!-- The logo is set to be on the top right corner of the screen and the h1 is used to improve SEO -->
+    <header class="logo">
+      <img src="./img/javiercz-logo-color.png" class="logo-img" alt="JavierCZ">
+      <h1>JavierCZ - Javier Castaños Zemborain - Diseño gráfico, desarrollo full stack y marketing digital</h1>
+    </header>
+
+    <main class="main-div">
+      <div class="contact">
+
+        <div class="contact-head">
+          <div class="title">
+            <h2>Con<br>tact</h2>
+          </div>
+          <div class="data">
+            <ul>
+              <li>(+549) 116.539.8829</li>
+              <li>Javocz.10@gmail.com</li>
+              <li>Buenos Aires, Argentina</li>
+              <li>Behance - Github</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-body">
+          <form action="#" method="post" autocomplete="on" class="form">
+            <input type="text" class="col-1of2" name="form-first_name" placeholder="Nombre" required>
+            <input type="text" class="col-1of2" name="form-last_name" placeholder="Apellido" required>
+            <input type="text" class="col-1of2" name="form-mail" placeholder="E-mail" required>
+            <input type="text" class="col-1of2" name="form-phone" placeholder="Teléfono">
+            <select class="col-1of1" name="form-category" required>
+              <option value="categoria" selected disabled>Soy...</option>
+              <option value="empresa">Empresa</option>
+              <option value="emprendedor">Emprendedor/a</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="otro">Otro</option>
+            </select>
+            <textarea class="form-message" name="form-message" rows="10"
+              placeholder="Contame... qué te parecieron mis trabajos? Qué puedo hacer por vos?" required></textarea>
+            <div class="col-1of1 footer">
+              <!-- <input type="checkbox" name="form-suscribe" value="yes">
+              <label for="form-suscribe">Recibir novedades sobre tendencias, actualizaciones, servicios y
+                trabajos.</label> -->
+              <!-- <input type="reset" value="Borrar"> -->
+              <input class="send-btn" type="submit" value="Enviar">
             </div>
-        </main>
-        <footer class="copyright">
-            <p>All rights reserved.</p>
-        </footer>
-    </div>
-    
-    <script src="./js/functions.js" type="text/javascript"></script>
-  </body>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="copyright">
+      <p>All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="./js/functions.js" type="text/javascript"></script>
+
+</body>
+
 </html>
