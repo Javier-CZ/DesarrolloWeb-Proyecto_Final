@@ -140,7 +140,6 @@
   .slider-description {
     bottom: 4rem;
     width: 80%;
-    margin: 0 10%;
     border-radius: 1rem;
   }
   /*----------------------
@@ -182,9 +181,9 @@
     }
   }
 
-  /*----------------------
-    PORTFOLIO ADJUSTMENTS
-  ------------------------*/
+  /*--------------------------------
+    PORTFOLIO & CONTACT ADJUSTMENTS
+  ----------------------------------*/
   .main-div{
     &-portfolio, &-contact{
       top: 20vh;
