@@ -53,3 +53,26 @@
     }
   }
 }
+
+.toggle{
+  display: none;
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: .5rem;
+  background: $primary-color url(../img/menu-bars.svg);
+  background-size: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;  
+  z-index: 101;
+
+  &-active{    
+    background: $primary-color url(../img/menu-close.svg);
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

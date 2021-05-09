@@ -1,4 +1,115 @@
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 780px) {
+  .logo{
+    top: 1.5rem;
+
+    &-img{
+      width: 3.5rem;
+    }
+  }
+
+  .main-div{
+    width: 100%;
+  }
+  .toggle{
+    display: block;
+  }
+
+  .navbar {
+    width: 100%;
+    align-items: flex-start;
+    padding: 5rem 30rem;
+    position: fixed;
+    top: 0;
+    left: 100%;
+
+    .nav-menu{
+      justify-content: flex-start;
+    }
+
+    .menu {
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 80%;
+
+        &-top {
+          @extend .menu-item;
+          margin-top: 10rem;
+
+          .menu-caption {
+            margin-top: 1rem;
+          }
+        }
+
+        &-bottom {
+          @extend.menu-item;
+          margin-bottom: unset;
+        }
+
+        a {
+          font-weight: 600;
+          font-size: 1.5rem;
+          color: $light-color;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+      }
+
+      &-caption {
+        display: block;
+        position: relative;
+        margin-left: 1rem;
+
+        left: unset;
+        top: unset;
+        background: unset;
+        border: unset;
+        margin-top: unset;
+      }
+
+      &-icon {
+        width: 4rem;
+        margin: 2rem 0;
+      }
+    }
+
+    &-active{
+      left: 0;
+    }
+  }
+
+  /*----------------------
+    CAREER ADJUSTMENTS
+  ------------------------*/
+  .career-fade{
+    display: none;
+  }
+
+  .main-div-career{
+    position: fixed;
+    height: 85%;
+    top: 15%;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .title{
+      position: fixed;
+      top: 2.3rem;
+    }
+
+    .line{
+      padding: 3rem .2rem;
+    }
+
+    .card{
+      max-width: 35rem;
+    }
+  }
+
+  /*----------------------
+    SERVICES ADJUSTMENTS
+  ------------------------*/
   .grid {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);

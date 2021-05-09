@@ -1,57 +1,7 @@
 @media screen and (max-width: 480px) {
   /** NAVBAR RULES **/
-  .navbar {
-    width: 50%;
-    padding: 2rem;
 
-    .menu {
-      &-item {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        width: 80%;
 
-        &-top {
-          @extend .menu-item;
-          margin-top: 3rem;
-
-          .menu-caption {
-            margin-top: 1rem;
-          }
-        }
-
-        &-bottom {
-          @extend.menu-item;
-          margin-bottom: unset;
-        }
-
-        a {
-          font-weight: 600;
-          font-size: 1.3rem;
-          color: $light-color;
-          text-transform: uppercase;
-          text-decoration: none;
-        }
-      }
-
-      &-caption {
-        display: block;
-        position: relative;
-        margin-left: 1rem;
-
-        left: unset;
-        top: unset;
-        background: unset;
-        border: unset;
-        margin-top: unset;
-      }
-
-      &-icon {
-        width: 4rem;
-        margin: 2rem 0;
-      }
-    }
-  }
 
   /** HEADER RULES **/
   .logo-img {

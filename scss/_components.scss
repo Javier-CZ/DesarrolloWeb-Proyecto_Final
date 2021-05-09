@@ -4,12 +4,12 @@ h1 {
 
 .logo {
   position: fixed;
-  top: 20px;
-  right: 15px;
+  top: 2rem;
+  right: 1.5rem;
   z-index: 100;
 
   &-img {
-    width: 40px;
+    width: 4rem;
   }
 }
 
@@ -24,7 +24,7 @@ h1 {
 
 /** CAREER COMPONENTS **/
 .line {
-  padding: 2px 4rem;
+  padding: .2rem 4rem;
   background: $primary-color;
 }
 

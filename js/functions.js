@@ -29,3 +29,11 @@ function displayNone($name) {
 
    $element.style.display = "none";
 }
+
+const toggle = document.querySelector('.toggle');
+const navBar = document.querySelector('.navbar');
+
+toggle.addEventListener('click', () => {
+    toggle.classList.toggle('toggle-active')
+    navBar.classList.toggle('navbar-active')
+})
