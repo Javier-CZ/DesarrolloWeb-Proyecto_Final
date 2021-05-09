@@ -1,22 +1,120 @@
 @media screen and (max-width: 480px) {
-  /** NAVBAR RULES **/
+  /*----------------------
+    NAVBAR ADJUSTMENTS
+  ------------------------*/
+  .navbar {
+    padding: 5rem 13.5rem;
+  }
 
-
-
-  /** HEADER RULES **/
+  /*----------------------
+    HEADER ADJUSTMENTS
+  ------------------------*/
   .logo-img {
     width: 30px;
   }
 
-  /** SERVICES RULES **/
+  /*----------------------
+    INDEX ADJUSTMENTS
+  ------------------------*/
+
+  .slider-description {
+    bottom: 3rem;
+    width: 80%;
+}
+
+  /*----------------------
+    GENERAL ADJUSTMENTS
+  ------------------------*/
+  .main-div,
+  .main-div.services,
+  .main-div-career{
+    .title h2{
+      font-size: 3.6rem;
+    }
+  }
+
+  /*----------------------
+    SERVICES ADJUSTMENTS
+  ------------------------*/
   .grid {
-    padding: 12vh 10vw 10vh;
+    padding: 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 28vh 20vh repeat(2, 14vh);
+    grid-template-rows: 23vh 20vh repeat(2, 14vh);
     grid-template-areas:
       'design   design'
       'web-development   web-development'
       'branding   branding'
       'digital   digital';
+  }
+
+  .services-pop-up{
+    .pop-up {
+      width: 85%;
+      height: 60%;
+    }
+  }
+
+  /*--------------------------------
+    PORTFOLIO & CONTACT ADJUSTMENTS
+  ----------------------------------*/
+  .main-div{
+    .portfolio, .contact{
+      width: 100%;
+  
+      &-head{  
+        .title{
+          
+          .title-sm{
+            display: block;
+          }
+  
+          .title-lg{
+            display: none;
+          }
+        }
+
+        .categories{
+          top: 13rem;
+          left: 0;
+          padding: 0 2rem;
+
+          ul{
+            
+            li{
+              margin: .5rem 1rem;
+            }
+          }
+        }
+        .data{
+          ul{
+            li{
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+              margin: .25rem 0;
+            }
+          }
+        }
+      }
+
+      &-body{
+        .item{
+          margin-bottom: 4.5rem;
+        }
+      }
+    }
+    .contact{
+      &-head{
+        .data{
+          top: 15rem;
+
+          ul{
+            li{
+              margin: .5rem 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
