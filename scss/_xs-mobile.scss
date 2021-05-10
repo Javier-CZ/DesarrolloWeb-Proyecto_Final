@@ -1,0 +1,44 @@
+@media screen and (max-width: 360px) {
+  /*--------------------------------
+    NAVBAR ADJUSTMENTS
+  ----------------------------------*/
+  .toggle{
+    top: 3.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-size: 2rem;
+  }
+
+  .navbar{
+    padding: 5rem 10.3rem;
+  }
+
+  /*--------------------------------
+    PORTFOLIO & CONTACT ADJUSTMENTS
+  ----------------------------------*/
+  .main-div{
+    .portfolio, .contact{
+  
+      &-head{
+        .title{
+          h2{
+            font-size: 3rem;
+          }
+        }
+        .categories{
+          ul{            
+            li{
+              margin: .25rem 1rem;
+            }
+          }
+        }
+      }
+
+      &-body{
+        .item{
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

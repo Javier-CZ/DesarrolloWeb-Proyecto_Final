@@ -1,7 +1,7 @@
 @media screen and (max-width: 780px) {
   .logo{
     top: 2.3rem;
-    right: 2rem;
+    left: 2rem;
 
     &-img{
       width: 3.5rem;
@@ -17,13 +17,8 @@
   ------------------------*/
   .toggle{
     display: block;
-    left: 2rem;
+    right: 2rem;
     top: 2.9rem;
-
-    &-active{
-      left: unset;
-      right: 2rem;
-    }
   }
 
   .navbar {
@@ -108,6 +103,7 @@
         align-items: center;
         position: fixed;
         top: 0;
+        background: white;
         height: 10rem;
         z-index: 20;
 
@@ -200,6 +196,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        margin: 0;
   
         .title{
           width: 100%;
@@ -221,8 +218,8 @@
         }
 
         .categories, .data{
-          position: fixed;
-          top: 14rem;
+          position: relative;
+          top: 0;
           left: 0;
           width: 100%;
           padding: 0 2rem;
@@ -253,7 +250,7 @@
     .contact{
       &-head{
         .data{
-          top: 14rem;
+          top: 0;
         }
       }
     }
