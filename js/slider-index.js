@@ -2,33 +2,31 @@ function changeSlide() {
 
     var imagenes=[
         {
-            "imgDsk":"./img/slider-index/slide-1.jpg",
-            "imgMb":"./img/slider-index/slide-3.jpg",
-            "title":"Titulo 1",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quisquam et aspernatur quasi enim ratione."
+            "imgDsk":"./img/index/design-dsk.png",
+            "imgMb":"./img/index/design-mb.png",
+            "title":"Graphic design",
+            "description": "Con una marcada trayectoria como diseñador gráfico, ofrezco una amplia y variada gama de soluciones."
         },
         {
-            "imgDsk":"./img/slider-index/slide-2.jpg",
-            "imgMb":"./img/slider-index/slide-4.jpg",
-            "title":"Titulo 2",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nam perspiciatis odio, fugit vel sequi. Dicta quisquam ducimus ut animi?"
+            "imgDsk":"./img/index/branding-dsk.png",
+            "imgMb":"./img/index/branding-mb.png",
+            "title":"Branding",
+            "description": "Varias marcas ya confiaron en mi para el desarrollo de sus marcas e identidades visuales, qué esperas?"
         },
         {
-            "imgDsk":"./img/slider-index/slide-1.jpg",
-            "imgMb":"./img/slider-index/slide-3.jpg",
-            "title":"Titulo 3",
-            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, repellendus. Expedita, veritatis."
+            "imgDsk":"./img/index/development-dsk.png",
+            "imgMb":"./img/index/development-mb.png",
+            "title":"Web development",
+            "description": "Hace años desarrollo sitio con Wordpress y desde hace algunos menos que los realizo de cero en código."
         },
         {
-            "imgDsk":"./img/slider-index/slide-2.jpg",
-            "imgMb":"./img/slider-index/slide-4.jpg",
-            "title":"Titulo 4",
-            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio fuga, quis dicta qui nam saepe maxime tempore vero dolores hic, repudiandae impedit ut doloremque ipsam."
+            "imgDsk":"./img/index/digital-dsk.png",
+            "imgMb":"./img/index/digital-mb.png",
+            "title":"Digital",
+            "description": "En reiteradas ocasiones y para diferentes clientes realicé campañas de email marketing, RRSS y apps."
         }
 
     ];
-
-    // console.log(imagenes)
 
     var i = 0;
     var time = 5000;
@@ -37,11 +35,11 @@ function changeSlide() {
     function changeData(){
 
         if (deviceWidth > 780){
-            document.sliderIndexImg.src = imagenes[i].imgMb;
+            document.sliderIndexImg.src = imagenes[i].imgDsk;
             document.getElementById("sliderDescriptionTitle").innerHTML = imagenes[i].title;
             document.getElementById("sliderDescriptionText").innerHTML = imagenes[i].description;
         }else {
-            document.sliderIndexImg.src = imagenes[i].imgDsk;
+            document.sliderIndexImg.src = imagenes[i].imgMb;
             document.getElementById("sliderDescriptionTitle").innerHTML = imagenes[i].title;
             document.getElementById("sliderDescriptionText").innerHTML = imagenes[i].description;
         }
